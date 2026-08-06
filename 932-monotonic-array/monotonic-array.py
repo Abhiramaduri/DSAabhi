@@ -9,7 +9,6 @@ class Solution(object):
         for i in range(len(nums)-1):
             if nums[i]>nums[i+1]:
                 increasing= False
-        for i in range(len(nums)-1):
             if nums[i]<nums[i+1]:
                 decreasing= False
         return increasing or decreasing
