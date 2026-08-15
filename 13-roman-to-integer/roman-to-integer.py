@@ -12,8 +12,7 @@ class Solution(object):
             'C': 100,
             'D': 500,
             'M': 1000
-        }
-        
+        }    
         total = 0
         length = len(s)    
         for i in xrange(length):
