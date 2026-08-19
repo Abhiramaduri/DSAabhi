@@ -1,0 +1,16 @@
+class Solution(object):
+    def baseNeg2(self, N):
+        """:type N: int
+
+        :rtype: str
+        """
+        if N == 0:
+          return "0"
+        digits = []
+        while N != 0:
+          N, remainder = divmod(N, -2)
+          if remainder < 0:
+            N, remainder = N + 1, remainder + 2
+          digits.append(str(remainder))
+        return "".join(digits[::-1])
+
