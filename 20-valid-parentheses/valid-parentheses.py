@@ -11,7 +11,7 @@ class Solution:
                 stack.append('}')
             elif char == '[':
                 stack.append(']')
-            # If stack is empty or the closing bracket doesn't match
+
             elif not stack or stack.pop() != char:
                 return False
                 
